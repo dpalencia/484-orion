@@ -11,6 +11,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
     </head>
     <body>
         <header role="banner" class="fullwidth">
@@ -24,8 +26,8 @@
                     <ul class="main-nav flex-grow flex-left">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Orion's Stars</a></li>
-                        <li><a href="#">Location</a></li>
                         <li><a href="#">Orion Nebula</a></li>
+                        <li><a href="#">Location</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,8 +35,8 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <main>
-            <section class="fullwidth flex-center">
+        <main role="main">
+            <section role="region" class="fullwidth flex-center">
                 <div class="flex-grow flex-66">
                     <figure class="nopad-nomargin">
                         <img class="fullwidth" src="img/home-hero-bg.jpg" />
@@ -52,14 +54,41 @@
                     </div>
                 </div>
             </section>
-            <section class="fullwidth secondary-bg">
+            <section role="region" class="fullwidth secondary-bg">
                 <div class="boxed-section">
                     <figure>
-                        <blockquote>
-                            But see, Orion sheds unwholesome dews; Arise, the pines a noxious shade diffuse; Sharp Boreas blows, and nature feels decay, Time conquers all, and we must time obey.
+                        <blockquote class="orion-quote">
+                            <span class="big-quote">&ldquo;</span>But see, <b>Orion</b> sheds unwholesome dews; Arise, the pines a noxious shade diffuse; Sharp Boreas blows, and nature feels decay, Time conquers all, and we must time obey.<span class="big-quote">&rdquo;</span></blockquote>
                         </blockquote>
-                        <figcaption>- Alexander Pope</figcaption>
+                        <figcaption class="orion-quote-caption"><b>Alexander Pope</b></figcaption>
                     </figure>
+                </div>
+            </section>
+            <section role="region" class="fullwidth">
+                <div class="boxed-section">
+                    <h2 class="text-center">
+                        Orion's Stars
+                    </h2>
+                    <div class="flex-center flex-align-center">
+                        <div class="flex-50">
+                            <h3 class="text-center">Learn About Orion's Stars.</h3>
+                            <p>Orion is home to a number of bright and prominent stars. Among them are Rigel, the <span class="blue">Blue Supergiant</span> and Betelgeuse, the <span class="red">red supergiant</span> at the end of its life--who is due to go supernova any minute.</p>
+                            <a href="#">Learn more.</a>
+                        </div>
+                        <div class="flex-50">
+                            <figure>
+                                <img class="fullwidth" src="img/orion-stars.jpg" alt="A diagram of Orion's most prominent stars." />
+                                <figcaption class="text-center">Stars compared to the sun. Rigel and Betelgeuse are the most prominent stars in Orion.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section role="region" class="fullwidth orion-nebula-bg flex-left flex-align-center pad-around-24">
+                <div class="dark-bg flex-33 pad-around-24 border-radius-24">
+                    <h2 class="text-center">The Great Orion Nebula</h2>
+                    <p>Believed to be the cosmic fire of creation by the Maya of Mesoamerica, M42 blazes brightly in the constellation Orion. Popularly called the Orion Nebula, this stellar nursery has been known to many different cultures throughout human history. </p>
+                    <a href="#">Learn More</a>
                 </div>
             </section>
         </main>

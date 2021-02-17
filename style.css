@@ -3,7 +3,15 @@ h1, h2, h3, h4, h5, h6, a, p, figcaption, blockquote {
 }
 
 h1 {
+    font-size: 48px;
+}
+
+h2 {
     font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
 }
 
 .link-style-reset, a, p, ul, li, figcaption, h1, h2, h3, h4, h5, h6, blockquote {
@@ -22,11 +30,21 @@ body, html {
     margin: 0px;
 }
 
+.dark-bg {
+    background-color: #000;
+}
+
 .secondary-bg {
-    background-color: #c9d6ee;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(132,71,183,1) 19%, rgba(255,150,95,1) 51%, rgba(132,71,183,1) 89%, rgba(0,0,0,1) 100%); 
 }
 .secondary-bg h1, .secondary-bg h2, .secondary-bg h3, .secondary-bg h4, .secondary-bg h5, .secondary-bg h6, .secondary-bg a, .secondary-bg p, .secondary-bg figcaption, .secondary-bg blockquote {
     color: #000;
+}
+
+.secondary-bg-reverse {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(132,71,183,1) 25%, #ff965f 70%); 
 }
 
 /* Main section styling */
@@ -37,7 +55,7 @@ body, html {
 #orion-main {
     background-color: #000000ba;
     width: 400px;
-    height: 200px;
+    height: 295px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -68,6 +86,14 @@ header {
 
 /* Generic styling */
 
+.border-radius-24 {
+    border-radius: 24px;
+}
+
+.float-left {
+    float: left;
+}
+
 .pad-around-24 {
     padding: 24px;
 }
@@ -83,6 +109,14 @@ header {
 
 .flex-grow {
     flex-grow: 1;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.black-text {
+    color: #000;
 }
 
 
@@ -135,8 +169,15 @@ header {
 }
 
 .boxed-section {
+    padding: 32px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.boxed-section-small {
+    padding: 32px;
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 .orion-section {
@@ -186,4 +227,20 @@ header {
     top: 430px;
     height: 284px;
     width: 327px;
+}
+
+
+/* Home-Specific */
+.orion-quote {
+    font-size: 36px;
+}
+
+.orion-quote-caption {
+    font-size: 24px;
+}
+
+.orion-nebula-bg {
+    background: url('img/orion-nebula-bg.jpg');
+    background-attachment: fixed;   
+    height: 100vh;
 }
