@@ -47,6 +47,11 @@ body, html {
     background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(132,71,183,1) 25%, #ff965f 70%); 
 }
 
+.simpson-bg {
+    background: url('img/simpson-orion.jpg');
+    background-size: cover;
+}
+
 /* Main section styling */
 .landing-main {
     text-align: center;
@@ -70,9 +75,12 @@ body, html {
 
 /* Nav Menu / Header*/
 header {
-    position: fixed;
     background-color: #000000ba;
     padding: 20px 0;
+}
+
+.header-fixed {
+    position: fixed;
 }
 
 .main-nav {
@@ -86,13 +94,13 @@ header {
 
 /* Generic styling */
 
+
+
 .border-radius-24 {
     border-radius: 24px;
 }
 
-.float-left {
-    float: left;
-}
+
 
 .pad-around-24 {
     padding: 24px;
@@ -101,6 +109,10 @@ header {
 .nopad-nomargin {
     padding: 0;
     margin: 0;
+}
+
+.margin-24 {
+    margin: 24px;
 }
 
 .text-center {
@@ -119,9 +131,21 @@ header {
     color: #000;
 }
 
+.vh-50 {
+    min-height: 50vh;
+}
+
 
 
 @media (min-width: 767px) {
+    .float-right {
+        float: right;
+    }
+    
+    .float-left {
+        float: left;
+    }
+
     .flex-center {
         display: flex;
         justify-content: center;
@@ -134,12 +158,12 @@ header {
     
     .flex-left {
         display: flex;
-        justify-content: left;
+        justify-content: flex-start;
     }
     
     .flex-right {
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
     }
     
     .flex-66 {
@@ -173,6 +197,13 @@ header {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.boxed-section-nopad-nomargin {
+    padding: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 .boxed-section-small {
     padding: 32px;
@@ -243,4 +274,12 @@ header {
     background: url('img/orion-nebula-bg.jpg');
     background-attachment: fixed;   
     height: 100vh;
+    background-size: cover;
+}
+
+
+/* Explore specific */
+
+.star-list figure {
+    margin: 10px 15px;
 }

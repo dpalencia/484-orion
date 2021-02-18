@@ -15,7 +15,7 @@
 
     </head>
     <body>
-        <header role="banner" class="fullwidth">
+        <header role="banner" class="fullwidth header-fixed">
             <div class="flex-center fullwidth">
                 <div class="flex-grow flex-right">
                     <a href="index.html">
@@ -24,8 +24,8 @@
                 </div>
                 <nav role="navigation" class="flex-grow">
                     <ul class="main-nav flex-grow flex-left">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Orion's Stars</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="stars.html">Explore</a></li>
                         <li><a href="#">Orion Nebula</a></li>
                         <li><a href="#">Location</a></li>
                     </ul>
@@ -35,7 +35,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <main role="main">
+        <main role="main" id="main">
             <section role="region" class="fullwidth flex-center">
                 <div class="flex-grow flex-66">
                     <figure class="nopad-nomargin">
@@ -60,20 +60,20 @@
                         <blockquote class="orion-quote">
                             <span class="big-quote">&ldquo;</span>But see, <b>Orion</b> sheds unwholesome dews; Arise, the pines a noxious shade diffuse; Sharp Boreas blows, and nature feels decay, Time conquers all, and we must time obey.<span class="big-quote">&rdquo;</span></blockquote>
                         </blockquote>
-                        <figcaption class="orion-quote-caption"><b>Alexander Pope</b></figcaption>
+                        <figcaption class="orion-quote-caption"><b>Alexander Pope, </b><cite>The Poetical Works Of Alexander Pope.</cite></figcaption>
                     </figure>
                 </div>
             </section>
             <section role="region" class="fullwidth">
                 <div class="boxed-section">
                     <h2 class="text-center">
-                        Orion's Stars
+                        Explore Orion
                     </h2>
                     <div class="flex-center flex-align-center">
                         <div class="flex-50">
-                            <h3 class="text-center">Learn About Orion's Stars.</h3>
-                            <p>Orion is home to a number of bright and prominent stars. Among them are Rigel, the <span class="blue">Blue Supergiant</span> and Betelgeuse, the <span class="red">red supergiant</span> at the end of its life--who is due to go supernova any minute.</p>
-                            <a href="#">Learn more.</a>
+                            <h3 class="text-center">Get to know the neighborhood.</h3>
+                            <p>Orion is home to a number of bright and prominent stars, as well as some magnficient deep sky objects. Among them are Rigel the <span class="blue">Blue Supergiant</span> and Betelgeuse the <span class="red">red supergiant</span>; these are massive stars at the ends of their lives.
+                            <a href="stars.html">Explore Orion</a>
                         </div>
                         <div class="flex-50">
                             <figure>
@@ -84,13 +84,33 @@
                     </div>
                 </div>
             </section>
-            <section role="region" class="fullwidth orion-nebula-bg flex-left flex-align-center pad-around-24">
-                <div class="dark-bg flex-33 pad-around-24 border-radius-24">
+            <section role="region" class="fullwidth orion-nebula-bg flex-left flex-align-center">
+                <div class="dark-bg flex-33 pad-around-24 border-radius-24 margin-24">
                     <h2 class="text-center">The Great Orion Nebula</h2>
                     <p>Believed to be the cosmic fire of creation by the Maya of Mesoamerica, M42 blazes brightly in the constellation Orion. Popularly called the Orion Nebula, this stellar nursery has been known to many different cultures throughout human history. </p>
-                    <a href="#">Learn More</a>
+                    <a href="#">Learn about the Orion Nebula</a>
+                </div>
+            </section>
+            <section role="region" class="boxed-section">
+                <div class="simpson-bg pad-around-24 border-radius-24 vh-50 text-center flex-align-center">
+                    <div>
+                        <h2>Location</h2>
+                        <h3>Where to Find Orion</h3>
+                        <p>Look for Orion’s Belt, three medium-bright stars in a short, straight row at the mid-section of the Hunter. Pick out any three equally bright stars in a row this evening, and you’ll probably be looking at Orion. Want to be sure? There are two even brighter stars – one reddish and the other blue – on either side of the Belt stars.</p>
+                        <a href="#">How to Find Orion</a>
+                    </div>
                 </div>
             </section>
         </main>
+        <footer role="complementary" class="flex-center pad-around-24">
+            <div class="flex-50 flex-left flex-align-center">
+                <a href="#main">Back to Top</a>
+            </div>
+            <div class="flex-50 flex-right flex-align-center">
+                <p>
+                    <a href="https://github.com/dpalencia/" target="_blank" >Daniel Palencia</a> | <a href="https://www.csun.edu/" target="_blank" >CSUN</a> 
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
