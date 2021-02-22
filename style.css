@@ -119,9 +119,7 @@ button:hover, .button-link:hover {
 header {
     background-color: #000000ba;
     border-bottom: 1px solid #fff;
-    padding: 12px;
 }
-
 
 .main-nav li {
     display: block;
