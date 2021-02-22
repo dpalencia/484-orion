@@ -16,24 +16,29 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header role="banner" class="fullwidth">
+        <header id="header" role="banner" class="fullwidth">
             <div class="flex-center fullwidth">
                 <div class="flex-grow text-center flex-center flex-align-center mobile-text-center">
-                    <a href="index.html">
+                    <!-- MENU AND TABINDEX SETUP  
+                        This navigation is a demonstration of tabindex. Tabindex is used to determine the order in which the tab key hits elements on the page. In this case, I wanted the main navigation menu to get selected before the image icon, so the <a> tags in the menu are set to have a lower tabindex than the clickable image.
+
+                        Tabindex can also be used to make non-selectable elements selectable, though this is not usually recommended because we want to use semantic interactive elements where possible.
+                    -->
+                    <a tabindex=5 href="index.html">
                         <img src="img/icon.png" width="50" height="50" alt="Orion Logo" />
                     </a>
                 </div>
                 <nav role="navigation" class="flex-grow mobile-text-center">
                     <ul class="main-nav flex-grow flex-center">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="stars.html">Explore</a></li>
-                        <li><a href="nebula.html">Orion Nebula</a></li>
-                        <li><a href="location.html">Location</a></li>
+                        <li><a tabindex=1 href="index.html">Home</a></li>
+                        <li><a tabindex=2 href="stars.html">Explore</a></li>
+                        <li><a tabindex=3 href="nebula.html">Orion Nebula</a></li>
+                        <li><a tabindex=4 href="where.html">Where to Look</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <main>
+        <main id="#main">
             <section id="orion-hero" class="text-center nebula-page-hero vh-100 flex-align-center flex-center border-radius-24">
                 <div class="dark-bg-transparent pad-around-24 margin-24 border-radius-24 absolute-top-left">
                     <h1>The Orion Nebula</h1>
@@ -52,10 +57,21 @@
                              At a distance of 1300 lightyears, the Orion Nebula is one of the brightest nebulae. It is situated underneath Orion's belt, making it easy to spot even with the unaided eye.
                         </h3>
                         <div class="nebula-grid white-text">
-                            <div class="grid-1 flex-align-center"><p>"Remarkably recognizable to astrophotographers today, this stunning image of the star forming Orion Nebula was captured in 1901 by American astronomer and telescope designer George Ritchey. His hand written notes indicate a 50 minute long exposure that ended at dawn and a reflecting telescope aperture of 24 inches masked to 18 inches to improve the sharpness of the recorded image. Ritchey's plates from over a hundred years ago preserve astronomical data and can still be used for exploring astrophysical processes."</p></div>
-                            <div class="grid-2"><img class="fullwidth" src="img/orion-1901.jpg" /></div>
-                            <div class="grid-3"><img class="fullwidth" src="img/brian-davis-orion.jpg" /></div>
-                            <div class="grid-4 flex-align-center"><p>"Astrophotographer Brian Davis shared this photo with SPACE.com last month, though he actually took the image during a 3.5-hour stargazing session from a driveway in the suburbs of Sumter, S.C., on Jan. 1, 2012. The iconic Running Man Nebula, or NGC 1977, is also visible toward the left of the image."</p></div>
+                            <div class="grid-1 flex-align-center">
+                                <div>
+                                    <blockquote class="nopad-nomargin">"Remarkably recognizable to astrophotographers today, this stunning image of the star forming Orion Nebula was captured in 1901 by American astronomer and telescope designer George Ritchey. His hand written notes indicate a 50 minute long exposure that ended at dawn and a reflecting telescope aperture of 24 inches masked to 18 inches to improve the sharpness of the recorded image. Ritchey's plates from over a hundred years ago preserve astronomical data and can still be used for exploring astrophysical processes.</blockquote> <br />
+                                    <cite><a href="https://apod.nasa.gov/apod/ap190817.html" target="_blank">Astronomy Picture of the Day, 1901 Photograph: The Orion Nebula </a></cite>
+                                </div>
+                            </div>
+                            <div class="grid-2"><img alt="A 1901 photo of the Orion Nebula taken by astronomer George Ritchey." class="fullwidth" src="img/orion-1901.jpg" /></div>
+                            <div class="grid-3"><img alt="A 2012 photo of the Orion nebula taken by astrophotographer Brian Davis." class="fullwidth" src="img/brian-davis-orion.jpg" /></div>
+                            <div class="grid-4 flex-align-center">
+                                <div>
+                                    <blockquote class="nopad-nomargin">"Astrophotographer Brian Davis shared this photo with SPACE.com last month, though he actually took the image during a 3.5-hour stargazing session from a driveway in the suburbs of Sumter, S.C., on Jan. 1, 2012. The iconic Running Man Nebula, or NGC 1977, is also visible toward the left of the image."</blockquote>
+                                    <br />
+                                    <cite><a target="_blank" href="https://www.nbcnews.com/sciencemain/youve-never-seen-stunning-orion-nebula-2D11603654">NBC News, You've never seen the stunning Orion Nebula like this before</a></cite>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="flex-25 pad-around-24 border-purple border-radius-24 flex-align-center">
@@ -78,11 +94,8 @@
                                     These two images show a protoplanetary disk around a new star in the Orion Nebula. As gas and dust coalesces around a newborn star, matter comes together through the force of gravity to form planets. Our own solar system began this way 4.5 billion years ago.
                                 </figcaption>
                             </figure>
-                            <h3 class="text-center">
-                                Image Source: 
-                            </h3>
-                            <cite class="flex-center flex-align-center">
-                                <a href="https://www.nasa.gov/feature/goddard/2017/messier-42-the-orion-nebula" target="_blank">Messier 42 (The Orion Nebula)</a>
+                            <cite class="flex-center flex-align-center text-center">
+                                <a href="https://www.nasa.gov/feature/goddard/2017/messier-42-the-orion-nebula" target="_blank">NASA.gov, Messier 42 (The Orion Nebula)</a>
                             </cite>
                         </div>
                     </div>
@@ -91,7 +104,7 @@
             </section>
             <footer role="contentinfo"  class="flex-center pad-around-24">
                 <div class="flex-50 flex-left flex-align-center">
-                    <a href="#main">Back to Top</a>
+                    <a href="#header">Back to Top</a>
                 </div>
                 <div class="flex-50 flex-right flex-align-center">
                     <p>

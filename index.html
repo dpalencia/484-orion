@@ -7,40 +7,120 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Orion | Landing</title>
-        <meta name="description" content="A website about the orion nebula.">
+        <title>Orion | Home</title>
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
     </head>
-    <body class="landing-body">
+    <body>
+        <header id="header" role="banner" class="fullwidth">
+            <div class="flex-center fullwidth">
+                <div class="flex-grow text-center flex-center flex-align-center mobile-text-center">
+                    <!-- MENU AND TABINDEX SETUP  
+                        This navigation is a demonstration of tabindex. Tabindex is used to determine the order in which the tab key hits elements on the page. In this case, I wanted the main navigation menu to get selected before the image icon, so the <a> tags in the menu are set to have a lower tabindex than the clickable image.
+
+                        Tabindex can also be used to make non-selectable elements selectable, though this is not usually recommended because we want to use semantic interactive elements where possible.
+                    -->
+                    <a tabindex=5 href="index.html">
+                        <img src="img/icon.png" width="50" height="50" alt="Orion Logo" />
+                    </a>
+                </div>
+                <nav role="navigation" class="flex-grow mobile-text-center">
+                    <ul class="main-nav flex-grow flex-center">
+                        <li><a tabindex=1 href="index.html">Home</a></li>
+                        <li><a tabindex=2 href="stars.html">Explore</a></li>
+                        <li><a tabindex=3 href="nebula.html">Orion Nebula</a></li>
+                        <li><a tabindex=4 href="where.html">Where to Look</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <section class="boxed-section orion-section">  
-            <div id="bg-container">
-                <main id="orion-main">
-                    <h1>Welcome to Orion.</h1>
-                    <a class="button-link" href="home.html">Enter</a>
-                </main>
-                <ul class="orion-items">
-                    <li class="orion-item i-1" aria-label="Location of the Orion Nebula">
-                        <a class="block-100" href="stars.html#betelgeuse"></a>
-                    </li>
-                    <li class="orion-item i-2">
-                        <a class="block-100" href="stars.html#orions-belt"></a>
-                    </li>
-                    <li class="orion-item i-3">
-                        <a class="block-100" href="stars.html#rigel"></a>
-                    </li>
-                    <li class="orion-item i-4">
-                        <a class="block-100" href="nebula.html"></a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="boxed-section orion-section-mobile">
-            <img alt="Illustration of the Orion constellation" class="fullwidth" src="img\avci_takimyildizinin_sekli_gokyuzunde_ok_atan_bir_avciya_benzer.png" />
-        </section>
+        <main role="main" id="main">
+            <section role="region" class="fullwidth flex-center">
+                <div class="flex-grow flex-66">
+                    <figure class="nopad-nomargin caption-overlay">
+                        <img class="fullwidth" src="img/home-hero-bg.jpg" />
+                        <figcaption class="text-center pad-around-24">Orion is a prominent constellation in the winter sky. Here it is seen center frame, with the pleiades seen to the right.</figcaption>
+                    </figure>
+                </div>
+                <div class="flex-grow flex-33 flex-align-center"> 
+                    <div class="pad-around-24">
+                        <h1>
+                            About Orion
+                        </h1>
+                        <p>
+                            Orion is one of the most recognizable constellations in the night sky, and is visible throughout the world due to its location on the celestial equator. Orion is home to a number of interesting objects including two supergiant stars and the photogenic Orion nebula. Navigate this website to learn about Orion, what you can see in Orion, and where to look.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section role="region" class="fullwidth secondary-bg">
+                <div class="boxed-section">
+                    <figure>
+                        <!-- 
+                            This is a demonstration of the usage of blockquote.
 
+                            A blockquote is an extended quotation. In this case, I combined it with the figure tag and figcaption tag to semantically denote that this is a type of figure with a caption. The figcaption contains the author of the quote and the name of the cited work. The cite tag is used to denote the name of the work.
+                        -->
+                        <blockquote class="orion-quote">
+                            <span class="big-quote">&ldquo;</span>But see, <b>Orion</b> sheds unwholesome dews; Arise, the pines a noxious shade diffuse; Sharp Boreas blows, and nature feels decay, Time conquers all, and we must time obey.<span class="big-quote">&rdquo;</span></blockquote>
+                        </blockquote>
+                        <figcaption class="orion-quote-caption"><b>Alexander Pope, </b><cite>The Poetical Works Of Alexander Pope.</cite></figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section role="region" class="fullwidth">
+                <div class="boxed-section">
+                    <h2 class="text-center">
+                        Explore Orion
+                    </h2>
+                    <div class="flex-center flex-align-center">
+                        <div class="flex-50">
+                            <h3 class="text-center">Get to know the neighborhood.</h3>
+                            <p>Orion is home to a number of bright and prominent stars, as well as some magnficient deep sky objects. Among them are Rigel the <span class="blue">Blue Supergiant</span> and Betelgeuse the <span class="red">red supergiant</span>; these are massive stars at the ends of their lives that will eventually go supernova.
+                            <br />
+                            <a href="stars.html" class="button-link">Learn More</a>
+                        </div>
+                        <div class="flex-50">
+                            <figure>
+                                <img class="fullwidth" src="img/orion-stars.jpg" alt="A diagram of Orion's most prominent stars." />
+                                <figcaption class="text-center">Stars compared to the sun. Rigel and Betelgeuse are the most prominent stars in Orion.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section role="region" class="fullwidth orion-nebula-bg vh-100 flex-left flex-align-center">
+                <div class="dark-bg flex-33 pad-around-24 border-radius-24 margin-24">
+                    <h2 class="text-center">The Great Orion Nebula</h2>
+                    <p>One of the most photographed objects in the night sky, the Orion Nebula is a cloud of gas and dust that fuels star formation. It is so bright that an obsxerver can spot it with the naked eye.</p>
+                    <a href="nebula.html" class="button-link">Learn about the Orion Nebula</a>
+                </div>
+            </section>
+            <section role="region" class="boxed-section">
+                <div class="simpson-bg pad-around-24 flex-center border-radius-24 vh-50 text-center flex-align-center">
+                    <div>
+                        <h2>How to Find Orion</h2>
+                        <p>Orion is one of the most easily seen constellations due to its bright and high profile features. Learn how to find Orion.</p>
+                        <a href="where.html" class="button-link">Learn More</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer role="contentinfo"  class="flex-center pad-around-24">
+            <div class="flex-50 flex-left flex-align-center">
+                <a href="#header">Back to Top</a>
+            </div>
+            <div class="flex-50 flex-right flex-align-center">
+                <p>
+                    <a href="https://github.com/dpalencia/" target="_blank" >Daniel Palencia</a> | <a href="https://www.csun.edu/" target="_blank" >CSUN</a> 
+                </p>
+            </div>
+        </footer>
     </body>
 </html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header id="header" role="banner" class="fullwidth">
+            <div class="flex-center fullwidth">
+                <div class="flex-grow text-center flex-center flex-align-center mobile-text-center">
+                    <!-- MENU AND TABINDEX SETUP  
+                        This navigation is a demonstration of tabindex. Tabindex is used to determine the order in which the tab key hits elements on the page. In this case, I wanted the main navigation menu to get selected before the image icon, so the <a> tags in the menu are set to have a lower tabindex than the clickable image.
+
+                        Tabindex can also be used to make non-selectable elements selectable, though this is not usually recommended because we want to use semantic interactive elements where possible.
+                    -->
+                    <a tabindex=5 href="index.html">
+                        <img src="img/icon.png" width="50" height="50" alt="Orion Logo" />
+                    </a>
+                </div>
+                <nav role="navigation" class="flex-grow mobile-text-center">
+                    <ul class="main-nav flex-grow flex-center">
+                        <li><a tabindex=1 href="index.html">Home</a></li>
+                        <li><a tabindex=2 href="stars.html">Explore</a></li>
+                        <li><a tabindex=3 href="nebula.html">Orion Nebula</a></li>
+                        <li><a tabindex=4 href="where.html">Where to Look</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main">
+            <section  id="orion-where-to-find" class="fullwidth " role="region">
+                <div class="boxed-section flex-center">
+                    <div class="flex-50 flex-align-center pad-around-24">
+                        <div>
+                            <aside id="orion-visible-notice" class="border-radius-24 pad-around-24 border-purple">
+                                <!--  ASIDE AND HIDDEN EXAMPLE
+                                      This section demonstrates the use of the "hidden" tag. This is a warning, semantically marked as an <aside> tag. I used a small snippet of Javascript to hide this element when the Dismiss button is clicked by enabling the hidden attribute, demonstrating how "hidden" is used as a boolean that shows/hides elements on the page.
+                                -->
+                                <p>
+                                    <b>Note: Orion is not visible year round!</b> <br />
+                                    Orion is only visible in the night sky from November to February. These are the months in which Orion is in the sky in the nighttime. The rest of the year, Orion is washed out by the sun in the daytime sky.
+                                </p>
+                                <button id="orion-visible-btn">Dismiss</button>
+                            </aside>
+                            <h1>Where to Find Orion</h1>
+                            <p>
+                                Because of Orion's location relative to other prominent landmarks and its own bright and prominent stars, the constellation is easy to find. These tips should guide you in the right direction to find Orion in the sky.
+                            </p>
+                            <ol>
+                                <!--  
+                                    Since this a list of tips, it's marked as an ordered list.
+                                -->
+                                <li>
+                                        <b>Look along the ecliptic.</b> <br />
+                                        One easy technique to locate Orion is to follow the ecliptic. Orion is situated near the ecliptic, so we can look along the ecliptic to find it. The ecliptic is the path the Sun, Moon, and planets trace along the sky as they follow their orbits. This is the path the Sun follows from sunrise to sunset.
+                                </li>
+                                <li>
+                                        <b>Look for Sirius.</b> <br />
+                                        Another landmark to watch for is Sirius. Sirius is the brightest star in the northern hemisphere, so it is easy to spot. Sirius is also along the ecliptic, and Orion is right next to it. Trace a path from sirius eastward along the ecliptic, and Orion will be right there.
+                                </li>
+                                <li>
+                                        <b>Look for Orion's Belt.</b> <br />
+                                        Orion's Belt is also hard to miss. Look for the distinct row of three bright stars and you've found Orion. Flanking Orion's belt, you should see Betelgeuse and Rigel.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="flex-50 flex-center flex-align-center">
+                        <!-- 
+                            Another image figure with a caption, linking to the source of the image.
+                        -->
+                            <figure class="nopad-nomargin fullwidth text-center caption-overlay">
+                                <img alt="A chart showing where to look in the night sky to see Orion." class="fullwidth" src="img/Orion-and-Sirius.png" />
+                                <figcaption>A starchart featuring Orion relative to other constellations. Image credit: <a href="https://www.universetoday.com/92678/why-does-sirius-twinkle/" target="_blank">Universe Today</a></figcaption>
+                            </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer role="contentinfo" class="flex-center pad-around-24">
+            <div class="flex-50 flex-left flex-align-center">
+                <a href="#header">Back to Top</a>
+            </div>
+            <div class="flex-50 flex-right flex-align-center">
+                <p>
+                    <a href="https://github.com/dpalencia/" target="_blank" >Daniel Palencia</a> | <a href="https://www.csun.edu/" target="_blank" >CSUN</a> 
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="hide-notification.js" ></script>
+    </body>
+</html>
